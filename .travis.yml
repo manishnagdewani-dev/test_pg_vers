@@ -8,3 +8,11 @@ before_install:
 
 addons:
   postgresql: "13.20"
+  apt:
+    packages:
+    - postgresql-13.2
+    - postgresql-client-13.2
+env:
+  global:
+  - PGPORT=5433
+  - PGUSER=travis
