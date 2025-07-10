@@ -7,11 +7,11 @@ before_install:
   - bundler -v
 
 addons:
-  postgresql: "13.20"
+  postgresql: "13"
   apt:
     packages:
-    - postgresql-13.2
-    - postgresql-client-13.2
+    - postgresql-13
+    - postgresql-client-13
 env:
   global:
   - PGPORT=5433
